@@ -38,7 +38,10 @@ function solve() {
   let flag = true;
   for (let i = 0; i < 81; i++) {
     let ch = field[i].value.charCodeAt(0);
-    if (field[i].value == "" || (ch > 48 && ch < 58)) continue;
+    if (field[i].value == "" || (ch > 48 && ch < 58)){
+       if(field[i].value!="") 
+        field[i].style.color="red";
+    }
     else {
       flag = false;
       alert("Please enter valid number(1-9)");
