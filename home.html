@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link  rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="fx" id="msg">
+           <p id="msg1"> Enter the known numbers and click the "Solve" button to solve the Sudoku,keep the cell blank if the number is unknown.
+        </p>
+        </div>
+        <h1>Sudoku Solver</h1>
+        <p class="header">Enter the values between 1-9</p>
+        <div class="board" id="brd">
+            <table >
+                <tr class="row">
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1" maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                <td  class="col" ><input type="text" value="" class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                <td  class="col" ><input type="text" value="" class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                <td  class="col" ><input type="text" value="" class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+                <tr class="row">
+                    <td  class="col" ><input type="text" value="" class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                    <td  class="col" ><input type="text" value=""class="field"maxlength="1"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="btn">
+            <button id="btn1" onclick="solve()">Solve</button>
+            <button id="btn2" onclick="clearer()">Clear</button>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
