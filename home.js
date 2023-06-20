@@ -40,7 +40,7 @@ function solve() {
     let ch = field[i].value.charCodeAt(0);
     if (field[i].value == "" || (ch > 48 && ch < 58)){
        if(field[i].value!="") 
-        field[i].style.color="red";
+        field[i].style.color="rgb(7, 224, 7)";
     }
     else {
       flag = false;
